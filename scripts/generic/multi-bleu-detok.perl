@@ -62,7 +62,9 @@ sub add_to_ref {
     close(REF);
 }
 
-my(@CORRECT,@TOTAL,$length_translation,$length_reference);
+my @CORRECT = (0) x 5;
+my @TOTAL = (0) x 5;
+my($length_translation,$length_reference);
 my $s=0;
 while(<STDIN>) {
     chop;
